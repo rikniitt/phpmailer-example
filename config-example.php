@@ -8,4 +8,6 @@ return [
         'secure' => PHPMailer\PHPMailer\PHPMailer::ENCRYPTION_SMTPS,
         'port' => 25,
     ],
+
+    'sender' => 'php-mailer@example.org',
 ];
