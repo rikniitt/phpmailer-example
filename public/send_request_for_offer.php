@@ -16,7 +16,8 @@ if (!is_valid_email($email)) {
 
 // Do the actual mail sending
 if (!send_request($email)) {
-    error_log('CRITICAL: sending email failed');
+    error_log('CRITICAL: sending email failed.');
     do_redirect('down.html');
 }
+
 do_redirect('thanks.html');
