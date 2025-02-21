@@ -14,4 +14,5 @@ require PROJECT_DIR . '/lib/PHPMailer/src/SMTP.php';
 // Require custom php code
 require PROJECT_DIR . '/src/configuration.php';
 require PROJECT_DIR . '/src/request_mailer.php';
+require PROJECT_DIR . '/src/http.php';
 

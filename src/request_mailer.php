@@ -1,6 +1,5 @@
 <?php
 
-
 function initialize_smtp_mailer() {
     $config = get_config();
 
@@ -15,3 +14,13 @@ function initialize_smtp_mailer() {
 
     return $mailer;
 }
+
+function is_valid_email($email) {
+    if (!$email) {
+        // No email given
+        return false;
+    }
+
+    return filter_var($email, FILTER_VALIDATE_EMAIL) === $email;
+}
+
