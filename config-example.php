@@ -10,4 +10,5 @@ return [
     ],
 
     'sender' => 'php-mailer@example.org',
+    'receiver' => 'sales@example.org',
 ];

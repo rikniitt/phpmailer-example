@@ -14,7 +14,7 @@ function send_request($email) {
 
     $mail = initialize_smtp_mailer();
     $mail->setFrom($config['sender']);
-    $mail->addAddress($email);
+    $mail->addAddress($config['receiver']);
     $mail->isHTML();
     $mail->Subject = 'New request for offer received';
     $mail->Body = offer_request_html($email);
