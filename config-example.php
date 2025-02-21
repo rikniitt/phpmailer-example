@@ -2,8 +2,10 @@
 
 return [
     'mailer' => [
-        'host' => 'mailpit-server.local',
-        'username' => 'mail-user',
-        'password' => 'mail-password',
+        'host' => 'localhost',
+        'username' => 'user',
+        'password' => 'pass',
+        'secure' => PHPMailer\PHPMailer\PHPMailer::ENCRYPTION_SMTPS,
+        'port' => 25,
     ],
 ];
